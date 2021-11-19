@@ -1,7 +1,19 @@
 .answers-group {
   & > .answer {
-    background-color: lightskyblue;
+    background-color: whitesmoke;
     border: 1px solid black;
     cursor: pointer;
+    max-width: 20rem;
+    margin: 0.5rem auto;
+    padding: 0.5rem;
+  }
+
+  & > .correct {
+    background-color: lime;
+  }
+
+  & > .incorrect {
+    background-color: red;
+    text-decoration: line-through;
   }
 }

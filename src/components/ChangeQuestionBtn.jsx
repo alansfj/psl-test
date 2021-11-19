@@ -8,6 +8,8 @@ const ChangeQuestionBtn = ({
   setCurrentQuizIndex,
   maxQuizIndex,
   setCurrentAppState,
+  setDidUserAnsweredAlready,
+  answersGroupRef,
 }) => {
   const handleNext = () => {
     if (currentQuestionIndex < maxQuestionIndex) {
@@ -22,6 +24,8 @@ const ChangeQuestionBtn = ({
         setCurrentQuestionIndex(0);
       }
     }
+
+    setDidUserAnsweredAlready(false);
   };
 
   return (

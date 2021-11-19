@@ -1,9 +1,21 @@
 import React from "react";
 
-const ChangeAppStateBtn = ({ text, setCurrentAppState, newState }) => {
+const ChangeAppStateBtn = ({
+  text,
+  setCurrentAppState,
+  newState,
+  setCorrectAnswers,
+}) => {
   return (
     <div>
-      <button onClick={() => setCurrentAppState(`${newState}`)}>{text}</button>
+      <button
+        onClick={() => {
+          setCurrentAppState(`${newState}`);
+          setCorrectAnswers(0);
+        }}
+      >
+        {text}
+      </button>
     </div>
   );
 };

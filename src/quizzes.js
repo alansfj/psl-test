@@ -10,7 +10,7 @@ export const quizzes = [
       {
         text: "Which element is used for a page break?",
         correctAnswer: "br",
-        incorrectAnswers: ["div", "break", "p"],
+        incorrectAnswers: ["a", "break", "hr"],
       },
       {
         text: "Which markup makes a link?",
